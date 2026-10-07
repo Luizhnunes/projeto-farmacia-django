@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f6;
+    color: #333;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #16834d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* CONTEÚDO */
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* BANNER */
+
+.banner {
+    background-color: #dff5e8;
+    padding: 45px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+.banner h1 {
+    color: #126b40;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+/* MEDICAMENTOS */
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #126b40;
+}
+
+.medicamentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #16834d;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #126b40;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #16834d;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background-color: #0f633a;
+}
+
+/* DETALHE */
+
+.detalhe {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.detalhe h1 {
+    color: #16834d;
+    margin-bottom: 25px;
+}
+
+.detalhe p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* CONTATO */
+
+.contato {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 40px auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contato h1 {
+    color: #16834d;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    margin-bottom: 15px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #126b40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.banner img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}

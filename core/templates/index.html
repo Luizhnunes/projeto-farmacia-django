@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Farmácia Vida</title>
+
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            Farmácia Vida
+        </div>
+
+        <nav>
+            <a href="{% url 'index' %}">Início</a>
+            <a href="{% url 'contato' %}">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="banner">
+
+            <h1>Bem-vindo à Farmácia Vida</h1>
+
+            <p>
+                Encontre medicamentos e consulte informações
+                de forma simples e rápida.
+            </p>
+            
+            <img src="{% static 'core/images/farmacia.jpg' %}" alt="Farmácia">
+
+        </section>
+
+
+        <h2 class="titulo">
+            Medicamentos disponíveis
+        </h2>
+
+
+        <section class="medicamentos">
+
+            {% for medicamento in medicamentos %}
+
+                <div class="card">
+
+                    <h3>
+                        {{ medicamento.nome }}
+                    </h3>
+
+                    <p>
+                        <strong>Fabricante:</strong>
+                        {{ medicamento.fabricante }}
+                    </p>
+
+                    <p class="preco">
+                        R$ {{ medicamento.preco }}
+                    </p>
+
+                    <p>
+                        <strong>Estoque:</strong>
+                        {{ medicamento.estoque }}
+                    </p>
+
+                    <a
+                        href="{% url 'detalhe' medicamento.id %}"
+                        class="botao"
+                    >
+                        Ver detalhes
+                    </a>
+
+                </div>
+
+            {% empty %}
+
+                <p>
+                    Nenhum medicamento cadastrado.
+                </p>
+
+            {% endfor %}
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Farmácia Vida - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+/django1/Lib/
+/django1/Scripts/
+/django1/Include/
+/django1/__pycache__/
+/django1/pyvenv.cfg
+
+__pycache__/
+*.py[cod]
+
+/staticfiles/
+*.log

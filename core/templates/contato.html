@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato - Farmácia Vida</title>
+
+    <link rel="stylesheet" href="{% static 'core/css/estilo.css' %}">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            Farmácia Vida
+        </div>
+
+        <nav>
+            <a href="{% url 'index' %}">Início</a>
+            <a href="{% url 'contato' %}">Contato</a>
+        </nav>
+
+    </header>
+
+
+    <main class="container">
+
+        <div class="contato">
+
+            <h1>
+                Entre em contato
+            </h1>
+
+            <p>
+                Caso tenha alguma dúvida, entre em contato
+                com a Farmácia Vida.
+            </p>
+
+            <p>
+                <strong>Telefone:</strong>
+                (81) 99999-9999
+            </p>
+
+            <p>
+                <strong>E-mail:</strong>
+                contato@farmaciavida.com
+            </p>
+
+            <p>
+                <strong>Endereço:</strong>
+                Rua Principal, 100 - Centro
+            </p>
+
+            <a href="{% url 'index' %}" class="botao">
+                Voltar para o início
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Farmácia Vida - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
